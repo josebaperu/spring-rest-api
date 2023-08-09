@@ -1,7 +1,12 @@
-package com.spring.rest.model;
+package com.spring.rest.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Person {
     private String name;
+    @Id
     private String id;
     public String getName() {
         return name;
@@ -18,6 +23,5 @@ public class Person {
     public void setId(String id) {
         this.id = id;
     }
-
 
 }
